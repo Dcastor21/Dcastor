@@ -33,7 +33,19 @@
     <script>
       ScrollReveal({ reset: false });
     </script>
-
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "385cac61-90e7-4d4f-80e2-832c079e9555", // The ID of this integration.
+      region: "us-east", // The region your integration is hosted in.
+      serviceInstanceID: "fcd3eaa2-a196-43a0-92e1-6cc8bf154694", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
   </head>
 
   <!-- Follow the HTML instructions to create your stunning portfolio website -->
@@ -304,4 +316,5 @@ I am currently seeking a paid internship.
     </footer>
     <!-- /END Footer Section -->
   </body>
+
 </html>
